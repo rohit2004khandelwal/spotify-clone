@@ -7,12 +7,16 @@ body{
 }
 .main{
     display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+
 }
 .sidebar{
     background-color: black;
     height: 100vh;
     width: 320px;
     border-radius: 1rem;
+    margin-right: 0.5rem;
 }
 .main-content{
     background-color: #121212;
@@ -24,7 +28,7 @@ body{
 }
 .music-player{
     background-color: black;
-    height: 72px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -56,4 +60,68 @@ a{
 }
 .navoption:hover{
     opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liboption img{
+    height: 1.25rem;
+    width: 1.25rem;
+} 
+.icons{
+    font-size: 1.2rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    padding: 0.60rem 1rem;
+    margin: 0.75rem 0 1.75rem 0;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.box-p2{
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.35rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    /* margin-bottom: 0.25rem; */
+    height: 2rem;
+    width: fit-content;
+}
+.nav-sticky{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
